@@ -25,6 +25,30 @@ body {
     background: #fff;
 }
 
+.form-container {
+    position: relative;
+}
+
+.form-pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 32px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 16px);
+}
+
+.form-pagination .button {
+    width: 6px;
+    height: 6px;
+    background: #dedede;
+    border-radius: 50%;
+}
+
+.form-pagination .button.active {
+    background: #aaa;
+}
+
 .payment {
     display: flex;
     border: none;
@@ -37,8 +61,16 @@ body {
     position: relative;
 }
 
+.payment legend h3 {
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500px;
+    color: #333;
+}
+
 .payment legend::after,
-.payment .payment-choice::after {
+.payment .payment-choice label::after {
     content: "";
     display: block;
     width: 100%;
@@ -49,55 +81,16 @@ body {
     bottom: 0;
 }
 
-.payment .payment-choice:last-child::after {
+.payment .payment-choice:last-child label::after {
     display: none;
 }
 
-.payment legend h3 {
-    line-height: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500px;
-    color: #333;
-}
-
-.payment .payment-choice {
+.payment .payment-choice label {
+    display: block;
     height: 55px;
     padding-left: 90px;
     position: relative;
     cursor: pointer;
-}
-
-.payment .payment-choice::before {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 20px;
-    background: #dedede;
-    position: absolute;
-    left: 34px;
-    top: 20px;
-}
-
-.payment .payment-choice.visa::before {
-    background: url('img/visa.svg') no-repeat center;
-    background-size: cover;
-    top: 18px;
-}
-
-.payment .payment-choice.mastercard::before {
-    background: url('img/mastercard.svg') no-repeat center;
-    background-size: cover;
-    top: 18px;
-}
-
-.payment .payment-choice.maestro::before {
-    background: url('img/maestro.svg') no-repeat center;
-    background-size: cover;
-    top: 18px;
-}
-
-.payment .payment-choice label {
     font-size: 14px;
     font-weight: 500;
     line-height: 55px;
@@ -105,8 +98,42 @@ body {
     color: #aaa;
 }
 
+.payment .payment-choice label:hover {
+    background: #eee;
+}
+
 .payment .payment-choice.checked label {
     color: #000;
+}
+
+.payment .payment-choice label::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: #dedede;
+    position: absolute;
+    left: 34px;
+    top: 18px;
+}
+
+.payment .payment-choice.visa label::before {
+    background: url('img/visa.svg') no-repeat center;
+    background-size: cover;
+}
+
+.payment .payment-choice.mastercard label::before {
+    background: url('img/mastercard.svg') no-repeat center;
+    background-size: cover;
+}
+
+.payment .payment-choice.maestro label::before {
+    background: url('img/maestro.svg') no-repeat center;
+    background-size: cover;
+}
+
+.payment .payment-choice {
+    position: relative;
 }
 
 .payment .checked::after {
@@ -114,11 +141,14 @@ body {
     display: block;
     width: 15px;
     height: 15px;
-    background: #dedede;
     position: absolute;
     left: auto;
     right: 20px;
     top: 20px;
+}
+
+.payment .checked.mastercard::after {
+    background: url('img/check.svg') no-repeat center;
 }
 
 .payment input[type=radio] {
@@ -136,4 +166,18 @@ body {
     text-transform: uppercase;
     background: #598bdd;
     color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-container button::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('img/arrow.svg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 220px;
+    top: 18px;
 }
