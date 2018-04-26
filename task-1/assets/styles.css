@@ -18,12 +18,71 @@ body {
 }
 
 .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 900px;
     height: 336px;
+    border-radius: 5px;
     background: #fff;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, .2);
 }
 
 .devices-tab {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.device-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.device-item:hover {
+    background: whitesmoke;
+}
+
+.device-icon {
+    width: 65px;
+    margin-top: 20px;
+}
+
+.device-name {
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #5572d6;
+}
+
+.device-description {
+    width: 240px;
+    margin-top: 10px;
+    line-height: 1.4;
+    text-align: center;
+    color: #a7a8ab;
+}
+
+.device-price {
+    margin-top: 10px;
+    color: #5572d6;
+    font-weight: 500;
+}
+
+.device-price sup {
+    font-weight: 700;
+}
+
+.device-price span {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 700;
 }
