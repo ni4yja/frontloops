@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.modal-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #16a085;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 465px;
+    border-radius: 5px;
+    background: url(img/bicycle.png) #fff no-repeat 0 180px;
+    background-size: contain;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, .2);
+}
