@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.modal-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('img/background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 440px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.ticket-tab {
+    width: inherit;
+    height: inherit;
+    padding: 50px 40px 40px;
+}
+
+.flight-direction {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.flight-direction::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #d3e6f4;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 15px);
+}
+
+.city h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    color: #3b8acf;
+}
+
+.city p,
+.title {
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+.user-info {
+    font-weight: 500;
+}
+
+.flight-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.details-tab {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.details-tab span {
+    display: block;
+}
+
+.details-tab.in-row {
+    flex-direction: row;
+    width: 100%;
+}
+
+.details-tab.in-column {
+    flex-direction: column;
+    width: 50%;
+}
+
+.in-row .details-row {
+    flex-grow: 1;
+}
+.in-column .details-row {
+    margin-bottom: 20px;
+}
+
+.qr-tab {
+    width: 50%;
+}
+
+.qr-tab img {
+    width: 100%;
+}
