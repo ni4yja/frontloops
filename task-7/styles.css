@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.modal-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    background: #f2ce97;
+}
+
+.modal-content {
+    width: 1000px;
+    height: 557px;
+}
