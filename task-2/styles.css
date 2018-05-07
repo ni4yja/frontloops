@@ -69,8 +69,12 @@ body {
     color: #333;
 }
 
+.payment ul {
+    list-style: none;
+}
+
 .payment legend::after,
-.payment .payment-choice label::after {
+.payment .payment-choice::after {
     content: "";
     display: block;
     width: 100%;
@@ -81,7 +85,7 @@ body {
     bottom: 0;
 }
 
-.payment .payment-choice:last-child label::after {
+.payment .payment-choice:last-child::after {
     display: none;
 }
 
@@ -96,13 +100,14 @@ body {
     line-height: 55px;
     text-transform: uppercase;
     color: #aaa;
+    z-index: 1;
 }
 
 .payment .payment-choice label:hover {
     background: #eee;
 }
 
-.payment .payment-choice.checked label {
+.payment .payment-choice input[type=radio]:checked ~ label {
     color: #000;
 }
 
@@ -136,24 +141,23 @@ body {
     position: relative;
 }
 
-.payment .checked::after {
+.payment-choice input[type=radio] {
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.payment-choice input[type=radio]:checked ~ label::after {
     content: "";
     display: block;
     width: 15px;
     height: 15px;
+    background: url('img/check.svg') no-repeat center;
     position: absolute;
     left: auto;
     right: 20px;
     top: 20px;
-}
-
-.payment .checked.mastercard::after {
-    background: url('img/check.svg') no-repeat center;
-}
-
-.payment input[type=radio] {
-  position: absolute;
-  visibility: hidden;
+    z-index: 10;
 }
 
 .form-container button {

@@ -15,18 +15,20 @@
                 <div class="form-container">
                     <fieldset class="payment">
                         <legend><h3>payment method</h3></legend>
-                        <div class="payment-choice visa">
-                            <input id="payment-method-1" type="radio" value="visa">
-                            <label for="payment-method-1">visa</label>
-                        </div>
-                        <div class="payment-choice mastercard checked">
-                            <input id="payment-method-2" type="radio" value="mastercard" checked>
-                            <label for="payment-method-2">mastercard</label>
-                        </div>
-                        <div class="payment-choice maestro">
-                            <input id="payment-method-3" type="radio" value="maestro">
-                            <label for="payment-method-3">maestro</label>
-                        </div>
+                        <ul>
+                            <li class="payment-choice visa">
+                                <input id="payment-method-1" type="radio" value="visa" name="choice">
+                                <label for="payment-method-1">visa</label>
+                            </li>
+                            <li class="payment-choice mastercard">
+                                <input id="payment-method-2" type="radio" value="mastercard" name="choice">
+                                <label for="payment-method-2">mastercard</label>
+                            </li>
+                            <li class="payment-choice maestro">
+                                <input id="payment-method-3" type="radio" value="maestro" name="choice">
+                                <label for="payment-method-3">maestro</label>
+                            </li>
+                        </ul>
                     </fieldset>
                     <button>next step</button>
                     <div class="form-pagination">
