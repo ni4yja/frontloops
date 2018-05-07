@@ -26,3 +26,21 @@ body {
     width: 1000px;
     height: 557px;
 }
+
+.post-box {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    height: inherit;
+    background: #fff;
+}
+
+.post-title {
+    width: 400px;
+    background: #484956;
+    color: #fff;
+}
+
+.post-info {
+    width: 600px;
+}
