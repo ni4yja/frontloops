@@ -125,3 +125,74 @@ button.social-item:hover {
 button.mail-item:hover {
     color: #000;
 }
+
+@media (max-width: 1200px) {
+    .sign-up-main {
+        width: 60%;
+    }
+    .sign-up-side {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1054px) {
+    .modal-content {
+        width: 90%;
+        height: auto;
+    }
+    .sign-up-tab {
+        width: 100%;
+    }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+    body {
+        width: auto;
+        height: auto;
+    }
+    .modal-content {
+        width: 100%;
+    }
+    .sign-up-tab {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-up-main {
+        width: 100%;
+        background: rgba(77,81,93,0.7);
+        z-index: 1;
+        color: #fff;
+    }
+    .sign-up-side {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .sign-up-header p,
+    button {
+        color: #fff;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 100%;
+        height: 100%;
+    }
+    .sign-up-main {
+        display: flex;
+        align-items: center;
+        padding: 50px 20px 0;
+    }
+    .sign-up-header {
+        margin-bottom: 30px;
+    }
+    .social-tab {
+        margin-bottom: 40px;
+    }
+}
