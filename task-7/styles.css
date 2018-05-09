@@ -31,7 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     width: inherit;
-    height: inherit;
+    height: auto;
     background: #fff;
 }
 
@@ -48,10 +48,21 @@ body {
 .post-title h2 {
     min-width: 220px;
     padding-bottom: 15px;
+    margin-bottom: 1em;
     font-size: 1.8em;
     font-weight: 400;
     position: relative;
-    text-align: center;
+}
+
+.post-title h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #e37b62;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .post-title strong {
@@ -60,8 +71,9 @@ body {
 }
 
 .post-title img {
-    margin-right: 15px;
+    margin: 0 15px 1em 0;
     border-radius: 50%;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.6);
 }
 
 .post-title h4 {
@@ -75,6 +87,85 @@ body {
 
 .post-info p {
     margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.post-info p:first-child::first-letter {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.post-info p:nth-of-type(2) {
+    margin-bottom: 50px;
+}
+
+.post-details {
+    padding: 30px 35px;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.time {
+    margin-bottom: 20px;
+}
+
+.time span:first-child {
+    padding-right: 15px;
+    position: relative;
+}
+
+.time span:first-child::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 10px;
+    right: 6px;
+}
+
+.time span:last-child {
+    font-weight: 700;
+}
+
+.comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments span {
+    padding-left: 35px;
+    position: relative;
+    color: #aaa;
+}
+
+.comments span::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('img/comment.svg') no-repeat center;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+.comments a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('img/more.svg') no-repeat center;
+    background-size: cover;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+    .modal-content {
+        display: flex;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -83,20 +174,41 @@ body {
         height: 557px;
     }
     .post-box {
+        height: 100%;
         flex-direction: row;
+        position: relative;
     }
     .post-title {
         align-items: flex-start;
         width: 400px;
     }
-    .post-title h2 {
-        text-align: left;
-    }
     .post-title .author {
         display: flex;
         align-items: center;
     }
+    .post-title img {
+        margin-bottom: 0;
+    }
     .post-info {
         width: 600px;
+    }
+    .post-info p {
+        min-width: 500px;
+        font-size: 1.2em;
+    }
+    .post-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 600px;
+        position: absolute;
+        bottom: 0;
+        left: 400px;
+    }
+    .time {
+        margin-bottom: 0;
+    }
+    .comments a {
+        margin-left: 15px;
     }
 }
