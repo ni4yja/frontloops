@@ -135,7 +135,7 @@ button.mail-item:hover {
     }
 }
 
-@media (max-width: 1054px) {
+@media (max-width: 1024px) {
     .modal-content {
         width: 90%;
         height: auto;

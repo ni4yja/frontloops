@@ -23,24 +23,80 @@ body {
 }
 
 .modal-content {
-    width: 1000px;
-    height: 557px;
+    width: 100%;
+    height: 100%;
 }
 
 .post-box {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: inherit;
     height: inherit;
     background: #fff;
 }
 
 .post-title {
-    width: 400px;
+    padding: 60px 35px 35px;
     background: #484956;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-title h2 {
+    min-width: 220px;
+    padding-bottom: 15px;
+    font-size: 1.8em;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+}
+
+.post-title strong {
+    display: block;
+    font-weight: 500;
+}
+
+.post-title img {
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.post-title h4 {
+    font-size: 1.4em;
+    font-weight: 400;
 }
 
 .post-info {
-    width: 600px;
+    padding: 60px 35px 35px;
+}
+
+.post-info p {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .modal-content {
+        width: 1000px;
+        height: 557px;
+    }
+    .post-box {
+        flex-direction: row;
+    }
+    .post-title {
+        align-items: flex-start;
+        width: 400px;
+    }
+    .post-title h2 {
+        text-align: left;
+    }
+    .post-title .author {
+        display: flex;
+        align-items: center;
+    }
+    .post-info {
+        width: 600px;
+    }
 }
