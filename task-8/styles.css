@@ -74,7 +74,7 @@ header a.back::before {
     top: 2px;
     left: 0;
 }
-
+header a:hover,
 header a.active {
     color: #000;
 }
@@ -84,15 +84,22 @@ header ul {
 }
 
 h1.post-title {
-    max-width: 60%;
+    max-width: 80%;
     margin-bottom: 1em;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    font-weight: 400;
+    position: relative;
 }
 
 p.post-info {
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #000;
     margin-bottom: 1em;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+}
+
+p.post-info a {
+    text-transform: inherit;
 }
 
 .media .video-tab {
@@ -149,8 +156,6 @@ p.post-info {
     }
 }
 
-
-
 @media (min-width: 568px) {
     header {
         flex-direction: row;
@@ -199,6 +204,7 @@ p.post-info {
         width: inherit;
         height: inherit;
         margin: 0;
+        box-shadow: 0px 10px 40px -5px #d8a89b;
     }
     aside {
         position: relative;
@@ -208,7 +214,7 @@ p.post-info {
     article {
         width: 640px;
         height: inherit;
-        padding: 175px 100px 100px;
+        padding: 150px 100px 100px;
     }
     header {
         width: 1000px;
@@ -217,5 +223,22 @@ p.post-info {
         position: absolute;
         top: 0;
         left: -360px;
+    }
+    h1.post-title {
+        font-size: 3.5em;
+        margin-bottom: 25px;
+    }
+    h1.post-title::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background: #000;
+        position: absolute;
+        top: 78%;
+        right: -75px;
+    }
+    p.post-info {
+        margin-bottom: 40px;
     }
 }
