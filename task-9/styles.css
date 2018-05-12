@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+/* color variables */
+/* basic structure shortcuts */
+.modal-content {
+	width: 100%;
+	height: 100%;
+}
+
+.modal-tab {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-tab {
+	background: #f2f2f2;
+}
+
+.cards {
+	width: 220px;
+	margin: 0 auto;
+	padding: 2em 0;
+	position: relative;
+}
+
+.cards h2 {
+	margin-bottom: 2em;
+}
+
+.cards button {
+	position: absolute;
+	top: 3em;
+	right: 0;
+}
+
+.cards-tab {
+	margin: 0 auto;
+	list-style: none;
+}
+
+.card-item {
+	height: 110px;
+	margin: 0 auto 1em;
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	background: #fff;
+}

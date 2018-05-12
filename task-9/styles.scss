@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* color variables */
+$bright-bg: #f7cd75;
+$light-bg: #f2f2f2;
+$border-line: #dedede;
+
+/* basic structure shortcuts */
+%fullscreen {
+    width: 100%;
+    height: 100%;
+}
+
+%centered-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    @extend %fullscreen;
+}
+
+.modal-tab {
+    @extend %centered-flexbox;
+    // background: $bright-bg;
+    background: $light-bg;
+}
+
+.cards {
+    width: 220px;
+    margin: 0 auto;
+    padding: 2em 0;
+    position: relative;
+}
+
+.cards h2 {
+    margin-bottom: 2em;
+}
+
+.cards button {
+    position: absolute;
+    top: 3em;
+    right: 0;
+}
+
+.cards-tab {
+    margin: 0 auto;
+    list-style: none;
+}
+
+.card-item {
+    height: 110px;
+    margin: 0 auto 1em;
+    border: 1px solid $border-line;
+    border-radius: 3px;
+    background: #fff;
+}
