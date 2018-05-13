@@ -13,16 +13,89 @@
         <div class="modal-content">
             <div class="wallet-tab">
                 <div class="cards">
-                    <h2>my wallets</h2>
-                    <button>add</button>
+                    <div class="scroll-content">
+                        <div class="cards-info">
+                            <h2>my wallets</h2>
+                            <button>add</button>
+                        </div>
                         <ul class="cards-tab">
-                            <li class="card-item visa"></li>
-                            <li class="card-item mastercard"></li>
-                            <li class="card-item maestro"></li>
+                            <li class="card-item visa">
+                                <div class="logo"><img src="img/visa.svg" alt="visa-logo"></div>
+                                <p class="number">
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <span>2562</span>
+                                </p>
+                                <p class="date">Valid thru: 12/17</p>
+                            </li>
+                            <li class="card-item mastercard">
+                                <div class="logo"><img src="img/mastercard.svg" alt="mastercard-logo"></div>
+                                <p class="number">
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <span>2101</span>
+                                </p>
+                                <p class="date">Valid thru: 07/19</p>
+                            </li>
+                            <li class="card-item maestro">
+                                <div class="logo"><img src="img/maestro.svg" alt="maestro-logo"></div>
+                                <p class="number">
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <span>8335</span>
+                                </p>
+                            <p class="date">Valid thru: 09/17</p>
+                            </li>
                         </ul>
+                    </div>
                 </div>
+                <div class="balance">
+                    <div class="scroll-content">
+                        <div class="balance-info">
+                            <h2>current balance</h2>
+                            <span class="sum">$729.<sup>00</sup></span>
+                        </div>
+                        <ul class="operations-list">
+                            <li class="operation-item">
+                                <span class="name">Apple iPhone 7, 128GB</span>
+                                <span class="details">Electronics #32343424 - 12 July 2015</span>
+                                <span class="sum">$650.<sup>00</sup></span>
+                            </li>
+                            <li class="operation-item income">
+                                <span class="name">Funds Added</span>
+                                <span class="details">Payment #5435 - 11 July 2015</span>
+                                <span class="sum">$900.<sup>00</sup></span>
+                            </li>
+                            <li class="operation-item">
+                                <span class="name">Energy Bill</span>
+                                <span class="details">Other #745237423 - 11 July 2015</span>
+                                <span class="sum">$84.<sup>00</sup></span>
+                            </li>
+                            <li class="operation-item">
+                                <span class="name">The Eye Cinema Ticket</span>
+                                <span class="details">Entertainment #32343424 - 10 July 2015</span>
+                                <span class="sum">$40.<sup>00</sup></span>
+                            </li>
+                            <li class="operation-item">
+                                <span class="name">McFood Restaurant</span>
+                                <span class="details">Cafes #32448 - 10 July 2015</span>
+                                <span class="sum">$10.<sup>50</sup></span>
+                            </li>
+                            <li class="operation-item">
+                                <span class="name">Gas Station</span>
+                                <span class="details">Other #2138453 - 10 July 2015</span>
+                                <span class="sum">$30.<sup>00</sup></span>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="main.js"></script>
 </body>
 </html>
