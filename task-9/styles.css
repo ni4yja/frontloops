@@ -55,7 +55,7 @@ ul {
 
 .cards-info {
 	width: 220px;
-	margin: 2em auto 0;
+	margin: 3.4em auto 0;
 	position: relative;
 }
 
@@ -64,6 +64,12 @@ ul {
 }
 
 .cards-info button {
+	width: 15px;
+	height: 15px;
+	border: none;
+	overflow: hidden;
+	color: transparent;
+	background: url("img/plus.svg") no-repeat center;
 	position: absolute;
 	top: 5px;
 	right: 0;
@@ -81,6 +87,8 @@ ul {
 	border: 1px solid #dedede;
 	border-radius: 5px;
 	background: #fff;
+	cursor: pointer;
+	position: relative;
 }
 
 .card-item .logo {
@@ -105,6 +113,23 @@ ul {
 	font-size: 0.8em;
 }
 
+.card-item::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+}
+
+.card-item.active::after,
+.card-item:hover::after {
+	border-color: #9fabd1;
+}
+
 .balance {
 	height: 400px;
 	overflow: hidden;
@@ -113,6 +138,7 @@ ul {
 
 .sum {
 	font-weight: 700;
+	color: #9fabd1;
 }
 
 .balance-info {
@@ -125,7 +151,8 @@ ul {
 }
 
 .balance-info .sum {
-	font-size: 1.5em;
+	font-size: 1.4em;
+	color: #000;
 }
 
 .balance-info::after {
@@ -168,6 +195,10 @@ ul {
 	right: 0;
 }
 
+.operation-item.income .sum {
+	color: #8dcf62;
+}
+
 @media (min-width: 568px) {
 	.wallet-tab {
 		display: flex;
@@ -196,22 +227,32 @@ ul {
 		width: 300px;
 		height: 450px;
 	}
+	.card-item {
+		margin: 0 auto 2em;
+	}
 	.wallet-tab .balance {
 		width: 500px;
 		height: 450px;
 	}
+	.operation-item {
+		padding-left: 50px;
+		margin-bottom: 45px;
+	}
+	.operation-item::before {
+		content: "";
+		display: block;
+		width: 22px;
+		height: 22px;
+		background: url("img/minus.svg") no-repeat center;
+		border: 1px solid #e2e2e2;
+		border-radius: 50%;
+		background-size: 11px 11px;
+		position: absolute;
+		left: 0;
+		top: calc(50% - 11px);
+	}
+	.operation-item.income::before {
+		background: url("img/plus.svg") no-repeat center;
+		background-size: 11px 11px;
+	}
 }
-
-/* .operation-item::before {
-    content: "";
-    display: block;
-    width: 22px;
-    height: 22px;
-    background: url('img/minus.svg') no-repeat center;
-    border: 1px solid $icon;
-    border-radius: 50%;
-    background-size: 11px 11px;
-    position: absolute;
-    left: 0;
-    top: calc(50% - 11px);
-} */

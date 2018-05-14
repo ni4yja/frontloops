@@ -2,6 +2,8 @@
 $bright-bg: #f7cd75;
 $light-bg: #f2f2f2;
 $light-text: #727272;
+$blue-text: #9fabd1;
+$green-text: #8dcf62;
 $details: #c6c6c6;
 $icon: #e2e2e2;
 $border-line: #dedede;
@@ -63,12 +65,18 @@ ul {
 
 .cards-info {
     width: 220px;
-    margin: 2em auto 0;
+    margin: 3.4em auto 0;
     position: relative;
     h2 {
         margin-bottom: 2em;
     }
     button {
+        width: 15px;
+        height: 15px;
+        border: none;
+        overflow: hidden;
+        color: transparent;
+        background: url('img/plus.svg') no-repeat center;
         position: absolute;
         top: 5px;
         right: 0;
@@ -87,6 +95,8 @@ ul {
     border: 1px solid $border-line;
     border-radius: 5px;
     background: #fff;
+    cursor: pointer;
+    position: relative;
     .logo {
         width: 50px;
         height: 30px;
@@ -106,6 +116,23 @@ ul {
     }
 }
 
+.card-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.card-item.active::after,
+.card-item:hover::after {
+    border-color: $blue-text;
+}
+
 .balance {
     height: 400px;
     overflow: hidden;
@@ -114,6 +141,7 @@ ul {
 
 .sum {
     font-weight: 700;
+    color: $blue-text;
 }
 
 .balance-info {
@@ -124,7 +152,8 @@ ul {
     margin: 3em 0 2em;
     position: relative;
     .sum {
-        font-size: 1.5em;
+        font-size: 1.4em;
+        color: #000;
     }
 }
 
@@ -164,6 +193,10 @@ ul {
     }
 }
 
+.operation-item.income .sum {
+    color: $green-text;
+}
+
 @media (min-width: 568px) {
     .wallet-tab {
         display: flex;
@@ -192,22 +225,32 @@ ul {
         width: 300px;
         height: 450px;
     }
+    .card-item {
+        margin: 0 auto 2em;
+    }
     .wallet-tab .balance {
         width: 500px;
         height: 450px;
     }
+    .operation-item {
+        padding-left: 50px;
+        margin-bottom: 45px;
+    }
+    .operation-item::before {
+        content: "";
+        display: block;
+        width: 22px;
+        height: 22px;
+        background: url('img/minus.svg') no-repeat center;
+        border: 1px solid $icon;
+        border-radius: 50%;
+        background-size: 11px 11px;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 11px);
+    }
+    .operation-item.income::before {
+        background: url('img/plus.svg') no-repeat center;
+        background-size: 11px 11px;
+    }
 }
-
-/* .operation-item::before {
-    content: "";
-    display: block;
-    width: 22px;
-    height: 22px;
-    background: url('img/minus.svg') no-repeat center;
-    border: 1px solid $icon;
-    border-radius: 50%;
-    background-size: 11px 11px;
-    position: absolute;
-    left: 0;
-    top: calc(50% - 11px);
-} */
