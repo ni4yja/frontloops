@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.section-container {
+	padding: 0 2em;
+}
+
+header .section-container {
+	display: flex;
+}
