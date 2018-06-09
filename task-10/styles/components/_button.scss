@@ -1,0 +1,8 @@
+.button {
+    @include link-style-clear;
+    padding: 12px 15px;
+    border: none;
+    text-transform: uppercase;
+    color: $purewhite;
+    background: $indianred;
+}

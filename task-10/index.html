@@ -6,31 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>milestone task #1</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
 </head>
 <body>
     <div class="site-wrapper">
-        <header>
-            <div class="section-container">
-                <div class="logo"><a href="#"><img src="img/logo.svg" alt="apple logo"></a></div>
-                <nav  class="top-menu">
-                    <ul>
-                        <li><a href="">about</a></li>
-                        <li><a href="">offers</a></li>
-                        <li><a href="">services</a></li>
-                    </ul>
-                </nav>
-                <div class="search"><input type="text" placeholder="How can we help you?"></div>
+        <header class="site-header">
+            <div class="header-container">
+                <div class="top-navigation">
+                    <div class="header-logo"><a href="#" class="header-logo-link"><img src="img/logo.svg" alt="apple logo" class="header-logo-img"></a></div>
+                    <nav  class="top-menu">
+                        <ul class="top-menu-list">
+                            <li class="top-menu-item"><a href="#" class="top-menu-link">about</a></li>
+                            <li class="top-menu-item"><a href="#" class="top-menu-link">offers</a></li>
+                            <li class="top-menu-item"><a href="#" class="top-menu-link">services</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-search"><input type="search" placeholder="How can we help you?" class="search"></div>
             </div>
         </header>
-        <section class="main">
+        <section class="top-section">
             <div class="section-container">
-                <article>
-                    <h2>Freedom calls.</h2>
+                <article class="content-tab">
+                    <h2 class="regular-header">Freedom calls.</h2>
                     <p class="blockquote">
                         Answer a call from your surfboard. Ask Siri to send a message. Stream your favorite songs on your run. And do it while leaving your phone behind. Introducing Apple Watch Series 3 with cellular. Now you have the freedom to go with just your watch.
                     </p>
-                    <button type="button">watch the keynote</button>
+                    <button type="button" class="button">watch the keynote</button>
                 </article>
             </div>
         </section>
