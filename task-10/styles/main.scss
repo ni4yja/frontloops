@@ -10,11 +10,12 @@
 
 // 3. Base stuff
 @import 'base/typography';
-@import 'base/helpers';
 @import 'base/common';
 
 // 4. Layout-related sections
 @import 'layout/header';
+@import 'layout/top-section';
+@import 'layout/nike-section';
 
 // 5. Components
 @import 'components/button';

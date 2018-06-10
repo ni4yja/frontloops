@@ -2,11 +2,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (min-width: $sm-landscape) {
+        width: 100%;
+        margin-right: 40px;
+    }
 }
 
 .top-menu {
     width: calc(100% - 20px);
     margin-left: 2em;
+    @media (min-width: $mobile) {
+        margin-left: 20%;
+    }
+    @media (min-width: $md-landscape) {
+        margin-left: 50%;
+    }
+    @media (min-width: $tablet) {
+        width: auto;
+        margin-left: auto;
+    }
 }
 
 .top-menu-list {
@@ -15,15 +29,15 @@
 	@include list-style-clear;
 }
 
-.top-menu-item {
-    margin-bottom: 0.6em;
-}
-
 .top-menu-link {
     display: inline-block;
     line-height: 1.6;
     position: relative;
+    text-transform: capitalize;
     @include link-style-clear;
+    @media (min-width: $tablet) {
+        margin-left: 30px;
+    }
 }
 
 .top-menu-link::after {

@@ -332,13 +332,38 @@ template {
 }
 
 .regular-header {
+	margin: 0;
 	font-size: 2em;
 	color: #333333;
+}
+
+@media (min-width: 768px) {
+	.regular-header {
+		font-size: 3em;
+	}
+}
+
+.upper-header {
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
 }
 
 .header-container,
 .section-container {
 	padding: 0 2em;
+}
+
+@media (min-width: 992px) {
+	.header-container,
+	.section-container {
+		width: 900px;
+		margin: 0 auto;
+		padding: 0;
+	}
 }
 
 .blockquote {
@@ -358,23 +383,181 @@ template {
 	left: 0;
 }
 
-body {
-	font-family: "Roboto", sans-serif;
+@media (min-width: 640px) {
+	.blockquote {
+		max-width: 400px;
+	}
+}
+
+.textblock {
+	line-height: 1.5;
+	color: #333333;
+}
+
+.dots {
+	display: flex;
+	justify-content: space-between;
+	width: 34px;
+}
+
+.dots-item {
+	display: block;
+	width: 4px;
+	height: 4px;
+	background: #c8c8c8;
+}
+
+.read-more {
+	display: block;
+	padding-left: 44px;
+	text-decoration: none;
+	color: #b2b2b2;
+	color: #ea625c;
+	font-weight: 500;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.read-more::before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: #ea625c;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 1px);
+}
+
+.read-more:hover {
+	padding-left: 74px;
+	ransition: transform 0.25s ease-out;
+}
+
+.read-more:hover::before {
+	width: 60px;
+	ransition: transform 0.25s ease-out;
 }
 
 .site-header {
-	/* height: 50px; */
-	/* background: rgba(174,234,228,0.5); */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 20vh;
+}
+
+@media (min-width: 768px) {
+	.site-header {
+		height: 10vh;
+	}
 }
 
 .header-container {
-	/* height: inherit; */
 	padding: 1em 2em;
-	/* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between; */
-	/* background: rgba(247,233,153, 0.5); */
+}
+
+@media (min-width: 568px) {
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.top-section {
+	height: 80vh;
+	overflow: hidden;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+	.top-section {
+		background: url(../img/watches.jpg) no-repeat;
+		background-size: contain;
+		background-position: 45vw 45vh;
+	}
+}
+
+@media (min-width: 640px) {
+	.top-section {
+		background: url(../img/watches.jpg) no-repeat;
+		background-size: contain;
+		background-position: 75vw 15vh;
+	}
+}
+
+@media (min-width: 768px) {
+	.top-section {
+		display: flex;
+		align-items: center;
+		height: 90vh;
+		background-position: 65vw 15vh;
+	}
+}
+
+@media (min-width: 992px) {
+	.top-section {
+		background-position: 75vw 0;
+	}
+}
+
+.top-section .content-tab {
+	margin-top: 3em;
+}
+
+@media (min-width: 568px) {
+	.top-section .content-tab {
+		margin-top: 1em;
+	}
+}
+
+.top-section .blockquote {
+	margin-bottom: 2em;
+}
+
+@media (min-width: 568px) {
+	.top-section .blockquote {
+		margin-bottom: 1em;
+	}
+}
+
+@media (min-width: 640px) {
+	.top-section .blockquote {
+		margin-bottom: 2em;
+	}
+}
+
+.three-columns {
+	padding: 2em 0;
+}
+
+@media (min-width: 640px) {
+	.three-columns {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.three-columns .content-tab {
+	padding-bottom: 0.4em;
+}
+
+@media (min-width: 640px) {
+	.three-columns .content-tab {
+		max-width: 32%;
+	}
+}
+
+@media (min-width: 992px) {
+	.three-columns .content-tab {
+		max-width: 270px;
+	}
+}
+
+@media (min-width: 768px) {
+	.three-columns .upper-header {
+		margin-bottom: 2em;
+	}
 }
 
 .button {
@@ -385,9 +568,11 @@ body {
 	text-transform: uppercase;
 	color: white;
 	background: #ea625c;
+	cursor: pointer;
 }
 
 .search {
+	width: 100%;
 	line-height: 1.6;
 	border: none;
 	border-bottom: 1px solid dimgray;
@@ -408,15 +593,47 @@ body {
 	color: #b2b2b2;
 }
 
+@media (min-width: 568px) {
+	.search {
+		width: auto;
+	}
+}
+
 .top-navigation {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
+@media (min-width: 568px) {
+	.top-navigation {
+		width: 100%;
+		margin-right: 40px;
+	}
+}
+
 .top-menu {
 	width: calc(100% - 20px);
 	margin-left: 2em;
+}
+
+@media (min-width: 360px) {
+	.top-menu {
+		margin-left: 20%;
+	}
+}
+
+@media (min-width: 640px) {
+	.top-menu {
+		margin-left: 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	.top-menu {
+		width: auto;
+		margin-left: auto;
+	}
 }
 
 .top-menu-list {
@@ -427,16 +644,19 @@ body {
 	list-style: none;
 }
 
-.top-menu-item {
-	margin-bottom: 0.6em;
-}
-
 .top-menu-link {
 	display: inline-block;
 	line-height: 1.6;
 	position: relative;
+	text-transform: capitalize;
 	text-decoration: none;
 	color: #b2b2b2;
+}
+
+@media (min-width: 768px) {
+	.top-menu-link {
+		margin-left: 30px;
+	}
 }
 
 .top-menu-link::after {

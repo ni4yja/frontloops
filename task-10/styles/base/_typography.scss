@@ -1,4 +1,13 @@
 .regular-header {
+    margin: 0;
     font-size: 2em;
     color: $regular-text;
+    @media (min-width: $tablet) {
+        font-size: 3em;
+    }
+}
+
+.upper-header {
+    font-size: 1.1em;
+    text-transform: uppercase;
 }
