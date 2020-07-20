@@ -6,30 +6,108 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FrontLoops #11 Task</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css'><link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="washing-machine-tab">
-    <p class="tips">Loads should be under 8 pounds. It is recommended using neutral detergent to prevent damage to the cloth and to improve the washing results.
-    </p>
+  <div class="washing-machine-tips">
+    <p>Loads should be under 8 pounds. It is recommended using neutral detergent to prevent damage to the cloth and to improve the washing results.</p>
+  </div>
+  <div class="washing-machine-tab"> 
     <div class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">1</div>
-          <div class="swiper-slide">2</div>
-          <div class="swiper-slide">3</div>
-          <div class="swiper-slide">4</div>
-          <div class="swiper-slide">5</div>
+          <div class="swiper-slide">
+            <div class="washing-machine-mode">
+              <div class="timer">
+                <span>Timer</span>
+                <h3>45 min</h3>
+              </div>
+              <div class="temperature">
+                <span>Temperature</span>
+                <h3>Cold</h3>
+              </div>
+              <div class="load">
+                <span>Load</span>
+                <h3>Medium</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="washing-machine-mode">
+              <div class="timer">
+                <span>Timer</span>
+                <h3>40 min</h3>
+              </div>
+              <div class="temperature">
+                <span>Temperature</span>
+                <h3>Cold</h3>
+              </div>
+              <div class="load">
+                <span>Load</span>
+                <h3>Light</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="washing-machine-mode">
+              <div class="timer">
+                <span>Timer</span>
+                <h3>45 min</h3>
+              </div>
+              <div class="temperature">
+                <span>Temperature</span>
+                <h3>Cold</h3>
+              </div>
+              <div class="load">
+                <span>Load</span>
+                <h3>Medium</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="washing-machine-mode">
+              <div class="timer">
+                <span>Timer</span>
+                <h3>30 min</h3>
+              </div>
+              <div class="temperature">
+                <span>Temperature</span>
+                <h3>Cold</h3>
+              </div>
+              <div class="load">
+                <span>Load</span>
+                <h3>Delicate</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="washing-machine-mode">
+              <div class="timer">
+                <span>Timer</span>
+                <h3>45 min</h3>
+              </div>
+              <div class="temperature">
+                <span>Temperature</span>
+                <h3>Warm</h3>
+              </div>
+              <div class="load">
+                <span>Load</span>
+                <h3>Medium</h3>
+              </div>
+            </div>
+          </div>
       </div>
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <!-- If we need pagination -->
-      <div class="elements"></div>
-    </div> 
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"><i class="fa fa-caret-left"></i></div>
+    <div class="swiper-button-next"><i class="fa fa-caret-right"></i></div>
+    <button class="washing-machine-start">Start</button>
   </div> 
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js'></script>
