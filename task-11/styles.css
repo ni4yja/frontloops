@@ -35,6 +35,7 @@ body {
   width: 900px;
   margin: 0 auto;
   position: relative;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, .3);
 }
 
 .washing-machine-mode {
