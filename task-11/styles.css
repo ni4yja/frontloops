@@ -1,0 +1,25 @@
+/* color variables */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #de8a89;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.washing-machine-tab {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tips {
+  max-width: 620px;
+}

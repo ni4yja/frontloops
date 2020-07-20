@@ -1,0 +1,23 @@
+/* color variables */
+$darksalmon: #de8a89;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: $darksalmon;
+    display: flex;
+    align-items: center;
+}
+
+.washing-machine-tab {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tips {
+    max-width: 620px;
+}
