@@ -1,0 +1,137 @@
+/* color variables */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 150px;
+  background: #2f2f2f;
+}
+
+.account-tab {
+  width: 500px;
+  padding: 55px 60px 30px;
+  background: #fdec51;
+  position: relative;
+}
+
+.account-tab h4 {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin: 0 0 60px;
+}
+
+.account-tab .close {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  width: 20px;
+  height: 20px;
+  opacity: .5;
+}
+
+.account-tab .close:hover {
+  opacity: 1;
+}
+
+.account-tab .close:before, .account-tab .close:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background: #2f2f2f;
+}
+
+.account-tab .close:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.account-tab .close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.account-tab button {
+  border: none;
+  background: none;
+  margin-left: 40px;
+  float: right;
+  font-size: 1.2em;
+  color: #2f2f2f;
+  opacity: .6;
+}
+
+.account-tab button:hover {
+  opacity: 1;
+}
+
+.form-tab {
+  width: 500px;
+  margin-bottom: 30px;
+  padding: 60px 40px 45px;
+  background: #fff;
+  position: relative;
+}
+
+.form-tab img {
+  position: absolute;
+  top: -30px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.fullname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #abb4c1;
+}
+
+.form-row label {
+  text-transform: uppercase;
+  color: #abb4c1;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.form-row input,
+.form-row textarea {
+  border: none;
+  outline: none;
+}
+
+.form-row textarea {
+  resize: vertical;
+  overflow: auto;
+  height: 95px;
+}

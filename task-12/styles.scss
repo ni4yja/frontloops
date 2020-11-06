@@ -1,0 +1,127 @@
+/* color variables */
+$darkslategray: #2f2f2f;
+$khaki: #fdec51;
+$white: #fff;
+$silver: #abb4c1;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 150px;
+	background: $darkslategray;
+}
+
+.account-tab {
+	width: 500px;
+	padding: 55px 60px 30px;
+	background: $khaki;
+	position: relative;
+
+	h4 {
+			font-size: 1.3em;
+			font-weight: 500;
+			margin: 0 0 60px;
+	}
+
+	.close {
+		position: absolute;
+		right: 60px;
+		top: 60px;
+		width: 20px;
+		height: 20px;
+		opacity: .5;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&:before,
+		&:after {
+			position: absolute;
+			left: 10px;
+			content: ' ';
+			height: 20px;
+			width: 2px;
+			background: $darkslategray;
+		}
+
+		&:before {
+			transform: rotate(45deg);
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+
+	button {
+		border: none;
+		background: none;
+		margin-left: 40px;
+		float: right;
+		font-size: 1.2em;
+		color: $darkslategray;
+		opacity: .6;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.form-tab {
+	width: 500px;
+	margin-bottom: 30px;
+	padding: 60px 40px 45px;
+	background: $white;
+	position: relative;
+
+	img {
+		position: absolute;
+		top: -30px;
+    width: 60px;
+    border-radius: 50%;
+	}
+}
+
+.fullname {
+  display: flex;
+}
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid $silver;
+
+	label {
+			text-transform: uppercase;
+			color: $silver;
+			font-weight: 700;
+			margin-bottom: 10px;
+	}
+
+	input,
+	textarea {
+			border: none;
+			outline: none;
+	}
+	
+	textarea {
+			resize: vertical;
+			overflow: auto;
+			height: 95px;
+	}
+}
