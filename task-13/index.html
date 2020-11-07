@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FrontLoops #13 Task</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="flex-container">
+    <div class="media-container" id="app">
+      <div class="media-tab photos">
+        <div class="tab-heading">
+          <span class="icon"><img src="./img/photo.svg" alt="photo"></span>
+          <h4>Photos</h4>
+        </div>
+        <button 
+          v-on:click="show = !show"
+          :class="{ 'active' : isOpen }"
+          @click.prevent="toggle"
+        ><img src="./img/arrow.svg" alt="open"></button>
+        <transition name="slide">
+          <ul v-if="show" class="photos-list">
+            <li v-for="item of items" :key="item">{{ item }}</li>
+          </ul>
+        </transition>
+      </div>
+      <div class="media-tab files">
+        <div class="tab-heading">
+          <span class="icon"><img src="./img/folder.svg" alt="files"></span>
+          <h4>Files</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js'></script>
+  <script  src="./script.js"></script>
+</body>
+</html>
