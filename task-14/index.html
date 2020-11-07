@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FrontLoops #14 Task</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app" class="tab-container">
+    <ul class="tab-list">
+      <li class="tab-item">
+        <a 
+          class="tab-link" 
+          @click.prevent="setActive('events')" 
+          :class="{ active: isActive('events') }" 
+          href="#events"
+        >
+          <img src="./img/event.svg" alt="events">
+        </a>
+      </li>
+      <li class="tab-item">
+        <a 
+          class="tab-link" 
+          @click.prevent="setActive('finance')" 
+          :class="{ active: isActive('finance') }" 
+          href="#finance"
+        >
+          <img src="./img/finance.svg" alt="finance">
+        </a>
+      </li>
+      <li class="tab-item">
+        <a 
+          class="tab-link" 
+          @click.prevent="setActive('cafes')" 
+          :class="{ active: isActive('cafes') }" 
+          href="#cafes"
+        >
+          <img src="./img/cafe.svg" alt="cafes">
+        </a>
+      </li>
+      <li class="tab-item">
+        <a 
+          class="tab-link" 
+          @click.prevent="setActive('gifts')" 
+          :class="{ active: isActive('gifts') }" 
+          href="#gifts"
+        >
+          <img src="./img/gift.svg" alt="gifts">
+        </a>
+      </li>
+      <li class="tab-item">
+        <a 
+          class="tab-link" 
+          @click.prevent="setActive('pets')" 
+          :class="{ active: isActive('pets') }" 
+          href="#pets"
+        >
+          <img src="./img/pets.svg" alt="pets">
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-info" :class="{ 'active show': isActive('events') }" id="events">
+        <div class="tab-cover">
+          <h2 class="tab-heading">Events</h2>
+          <span class="tab-location">
+            <img src="./img/location.svg" alt="location">
+            Madrid</span>
+        </div>
+        <div class="tab-details">
+          <h3>Comming soon!</h3>
+        </div>
+      </div>
+      <div class="tab-info" :class="{ 'active show': isActive('finance') }" id="finance">
+        <div class="tab-cover">
+          <h2 class="tab-heading">Finance</h2>
+          <span class="tab-location">
+            <img src="./img/location.svg" alt="location">
+            Madrid</span>
+        </div>
+        <div class="tab-details">
+          <h3>Comming soon!</h3>
+        </div>
+      </div>
+      <div class="tab-info" :class="{ 'active show': isActive('cafes') }" id="cafes">
+        <div class="tab-cover">
+          <h2 class="tab-heading">Food</h2>
+          <span class="tab-location">
+            <img src="./img/location.svg" alt="location">
+            Madrid</span>
+        </div>
+        <div class="tab-details">
+          <ul>
+            <li><span>Pizza</span><span class="number">17</span></li>
+            <li><span>Sushi</span><span class="number">9</span></li>
+            <li><span>Gourmet</span><span class="number">22</span></li>
+            <li><span>Burger</span><span class="number">14</span></li>
+          </ul>   
+        </div>
+      </div>
+      <div class="tab-info" :class="{ 'active show': isActive('gifts') }" id="gifts">
+        <div class="tab-cover">
+          <h2 class="tab-heading">Gifts</h2>
+          <span class="tab-location">
+            <img src="./img/location.svg" alt="location">
+            Madrid</span>
+        </div>
+        <div class="tab-details">
+          <h3>Comming soon!</h3>
+        </div>
+      </div>
+      <div class="tab-info" :class="{ 'active show': isActive('pets') }" id="pets">
+        <div class="tab-cover">
+          <h2 class="tab-heading">Pets</h2>
+          <span class="tab-location">
+            <img src="./img/location.svg" alt="location">
+            Madrid</span>
+        </div>
+        <div class="tab-details">
+          <h3>Comming soon!</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js'></script>
+  <script  src="./script.js"></script>
+</body>
+</html>
