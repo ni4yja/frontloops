@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FrontLoops #15 Task</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <full-page :options="options" id="fullpage" ref="fullpage">
+        <div class="section kharkiv">
+            <div class="mask"></div>
+            <div class="section-container">
+              <div class="section-info">
+                <span class="read-more"><a href="#">Read</a><img src="./img/more.svg" alt="more"></span>
+                <h1>1</h1>
+                <h3>Top things to see during the holiday in Kharkiv</h3>
+                <span class="views"><img src="./img/view.svg" alt="views">409.403</span>
+                
+              </div>
+            </div>
+        </div>
+        <div class="section london">
+          <div class="mask"></div>
+          <div class="section-container">
+            <div class="section-info">
+              <span class="read-more"><a href="#">Read</a><img src="./img/more.svg" alt="more"></span>
+              <h1>2</h1>
+              <h3>Top things to see during the holiday in London</h3>
+              <span class="views"><img src="./img/view.svg" alt="views">409.403</span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="section rome">
+          <div class="mask"></div>
+          <div class="section-container">
+            <div class="section-info">
+              <span class="read-more"><a href="#">Read</a><img src="./img/more.svg" alt="more"></span>
+              <h1>3</h1>
+              <h3>Top things to see during the holiday in Rome</h3>
+              <span class="views"><img src="./img/view.svg" alt="views">409.403</span>
+              
+            </div>
+          </div>
+        </div>
+    </full-page>
+    <ul class="actions">
+      <li @click="$refs.fullpage.api.moveSectionDown()" class="actions-button down"><img src="./img/down.svg" alt="down"></li>
+      <li @click="$refs.fullpage.api.moveSectionUp()" class="actions-button up"><img src="./img/up.svg" alt="up"></li>
+    </ul>  
+    </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js'></script>
+  <script src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.js"></script>
+  <script  src="./script.js"></script>
+</body>
+</html>

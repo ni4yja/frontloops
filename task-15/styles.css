@@ -1,0 +1,121 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.mask {
+  width: 700px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ecc843;
+  opacity: .8;
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.kharkiv {
+  background: url("img/kharkiv.jpeg");
+  background-size: cover;
+}
+
+.london {
+  background: url("img/london.jpg");
+  background-size: cover;
+}
+
+.rome {
+  background: url("img/rome.jpeg");
+  background-size: cover;
+}
+
+.section-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  padding: 20px 15px 30px;
+}
+
+.section-info {
+  height: 100%;
+  position: relative;
+  text-align: right;
+}
+
+.section-info .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.section-info .read-more img {
+  margin-left: 10px;
+}
+
+.section-info a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.section-info h1 {
+  font-size: 6em;
+  font-weight: 400;
+  margin: 380px 0 25px;
+}
+
+.section-info h3 {
+  font-size: 2.4em;
+  max-width: 350px;
+  font-weight: 500;
+  margin: 0 0 110px;
+}
+
+.section-info .views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.section-info .views img {
+  margin-right: 10px;
+}
+
+.actions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.actions-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+
+.actions-button.down {
+  bottom: 20px;
+}
+
+.actions-button.up {
+  top: 20px;
+}
