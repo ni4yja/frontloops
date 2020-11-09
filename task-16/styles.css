@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #78accd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendar-container {
+  width: 400px;
+  background: #fff;
+}
+
+.calendar-header {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calendar-header span {
+  color: #7d8994;
+  font-weight: 500;
+}
+
+.calendar-footer {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendar-footer span {
+  font-weight: 700;
+}
+
+.calendar-footer button {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #de6e46;
+  background: none;
+  border-radius: 50%;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendar-tab {
+  padding: 20px 30px;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.calendar-tab .cell {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin: 5px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.calendar-tab .day-header {
+  color: #7d8994;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.calendar-tab .disabled {
+  color: #dfdede;
+}
+
+.calendar-tab .highlighted {
+  border-radius: 50%;
+}
+
+.calendar-tab .today {
+  color: #fff;
+  background: #de6e46;
+}
+
+.calendar-tab .tasks:after,
+.calendar-tab .meetings:after {
+  width: 16px;
+  height: 16px;
+  font-size: .8em;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  right: -5px;
+}
+
+.calendar-tab .tasks {
+  border: 2px solid #de6e46;
+}
+
+.calendar-tab .tasks:after {
+  content: '6';
+  background: #de6e46;
+}
+
+.calendar-tab .meetings {
+  border: 2px solid #ae5989;
+}
+
+.calendar-tab .meetings:after {
+  content: '5';
+  background: #ae5989;
+}

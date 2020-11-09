@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #78accd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-container {
+  width: 400px;
+  background: #fff;
+}
+
+.calendar-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    color: #7d8994;
+    font-weight: 500;
+  }
+}
+
+.calendar-footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-weight: 700;
+  }
+
+  button {
+    width: 34px;
+    height: 34px;
+    border: 2px solid #de6e46;
+    background: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.calendar-tab {
+  padding: 20px 30px;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+
+  .cell {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  .day-header {
+    color: #7d8994;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .disabled {
+    color: #dfdede;
+  }
+
+  .highlighted {
+    border-radius: 50%;
+  }
+
+  .today {
+    color: #fff;
+    background: #de6e46; 
+  }
+
+  .tasks,
+  .meetings {
+    &:after {
+      width: 16px;
+      height: 16px;
+      font-size: .8em;
+      line-height: 16px;
+      color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: -4px;
+      right: -5px;
+    }
+  }
+
+  .tasks {
+    border: 2px solid #de6e46;
+
+    &:after {
+      content: '6';
+      background: #de6e46;
+    }
+  }
+
+  .meetings {
+    border: 2px solid #ae5989;
+
+    &:after {
+      content: '5';
+      background: #ae5989;
+    }
+  }
+}
