@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FrontLoops #17 Task</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app" class="articles-container">
+    <div class="articles-cover">
+      <h2>Press page</h2>
+      <p>Our news and media information</p>
+      <button><img src="./img/file.svg" alt=""> Media kit</button>
+    </div>
+    <div class="articles-tab">
+      <h2>Articles</h2>
+      <img src="./img/menu.svg" alt="" class="menu">
+      <ul class="articles-list">
+        <li><a href="#2017" @click.prevent="setActive('2017')" :class="{ active: isActive('2017') }">2017</a></li>
+        <li><a href="#2016" @click.prevent="setActive('2016')" :class="{ active: isActive('2016') }">2016</a></li>
+        <li><a href="#2015" @click.prevent="setActive('2015')" :class="{ active: isActive('2015') }">2015</a></li>
+        <li><a href="#2014" @click.prevent="setActive('2014')" :class="{ active: isActive('2014') }">2014</a></li>
+        <li><a href="#2013" @click.prevent="setActive('2013')" :class="{ active: isActive('2013') }">2013</a></li>
+        <li><a href="#2012" @click.prevent="setActive('2012')" :class="{ active: isActive('2012') }">2012</a></li>
+        <li><a href="#2011" @click.prevent="setActive('2011')" :class="{ active: isActive('2011') }">2011</a></li>
+        <li><a href="#2010" @click.prevent="setActive('2010')" :class="{ active: isActive('2010') }">2010</a></li>
+      </ul>
+      <div class="articles-content" :class="{ 'show': isActive('2017') }">
+        <div class="articles-row">
+          <p class="articles-text"><img src="./img/avatar1.jpg" alt=""> Top 5 fast growing startups this year</p>
+          <span class="articles-time">
+            <span class="date">20</span>
+            <span class="month">jan</span>
+            <span class="year">2017</span>
+          </span>
+        </div>
+        <div class="articles-row">
+          <p class="articles-text"><img src="./img/avatar2.jpg" alt="">Project Arc raises $90 billion from Stark industries</p>
+          <span class="articles-time">
+            <span class="date">10</span>
+            <span class="month">jan</span>
+            <span class="year">2017</span>
+          </span>
+        </div>
+        <div class="articles-row">
+          <p class="articles-text"><img src="./img/avatar1.jpg" alt="">Arc joins the big league, now taking oit its opponents</p>
+          <span class="articles-time">
+            <span class="date">06</span>
+            <span class="month">jan</span>
+            <span class="year">2017</span>
+          </span>
+        </div>
+        <div class="articles-row">
+          <p class="articles-text"><img src="./img/avatar3.jpg" alt="">Arc reveals the first Al prototype</p>
+          <span class="articles-time">
+            <span class="date">04</span>
+            <span class="month">jan</span>
+            <span class="year">2017</span>
+          </span>
+        </div>
+        <div class="articles-row">
+          <p class="articles-text"><img src="./img/avatar2.jpg" alt="">Its time for a new era. Arc leads this time</p>
+          <span class="articles-time">
+            <span class="date">02</span>
+            <span class="month">jan</span>
+            <span class="year">2017</span>
+          </span>
+        </div>
+      </div>
+      <div class="articles-content" :class="{ 'show': isActive('2016') }">Coming soon</div>
+      <div class="articles-content" :class="{ 'show': isActive('2015') }">Coming soon</div>
+      <div class="articles-content" :class="{ 'show': isActive('2014') }">Coming soon</div>
+      <div class="articles-content" :class="{ 'show': isActive('2013') }">Coming soon</div>
+      <div class="articles-content" :class="{ 'show': isActive('2012') }">Coming soon</div>
+      <div class="articles-content" :class="{ 'show': isActive('2011') }">Coming soon</div>
+      <div class="articles-content" :class="{ 'show': isActive('2010') }">Coming soon</div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js'></script>
+  <script  src="./script.js"></script>
+</body>
+</html>
