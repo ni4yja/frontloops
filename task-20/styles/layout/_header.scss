@@ -1,0 +1,72 @@
+header {
+  background: $white-bg;
+}
+
+.header-row {
+  border-bottom: 1px solid $gray-line;
+}
+
+.header-item {
+  height: 80px;
+  @include flex-centered;
+  padding: 0 20px;
+  border-right: 1px solid $gray-line;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.logo {
+  img {
+    width: 28px;
+  }
+}
+
+.search {
+  position: relative;
+
+  span {
+    position: absolute;
+    right: 30px;
+  }
+}
+
+.main-nav {
+  padding: 0 40px;
+}
+
+.actions {
+  span {
+    cursor: pointer;
+    margin-right: 30px;
+    transition: transform .3s;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+  .message {
+    color: $green;
+  }
+
+  .notification {
+    color: $yellow;
+  }
+
+  .person {
+    color: $purple;
+  }
+}
+
+.profile {
+  img {
+    width: 40px;
+    border-radius: 50%;
+  }
+}

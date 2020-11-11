@@ -1,0 +1,33 @@
+.posts-item {
+  h4 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  span {
+    font-size: 0.9rem;
+    color: $sub-text;
+  }
+}
+
+.posts-img {
+  width: 176px;
+  height: 176px;
+  margin-bottom: 10px;
+
+  &.one {
+    background: url(../img/article1.jpg);
+    background-size: cover;
+  }
+
+  &.two {
+    background: url(../img/article2.jpg);
+    background-size: cover;
+  }
+
+  &.three {
+    background: url(../img/article3.jpg);
+    background-size: cover;
+  }
+}

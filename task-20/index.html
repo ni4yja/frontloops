@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FrontLoops #20 Task</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div class="container">
+        <div class="header-item logo"><a href=""><img src="./img/logo.png" alt="logo"></a></div>
+        <div class="header-item search">
+          <input type="text" placeholder="Search">
+          <span class="material-icons">search</span>
+        </div>
+        <nav class="header-item main-nav">
+          <ul>
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Connections</a></li>
+            <li><a href="#">Interest</a></li>
+            <li><a href="#">Try Premium</a></li>
+          </ul>
+        </nav>
+        <div class="header-item actions">
+          <span class="material-icons message">insert_comment</span>
+          <span class="material-icons notification">notifications</span>
+          <span class="material-icons person">person_add</span>
+        </div>
+        <div class="header-item profile">
+          <img src="./img/avatar.jpg" alt="avatar">
+        </div>
+      </div>
+    </div>
+    <div class="header-row">
+      <div class="container">
+        <ul class="page-nav">
+          <li><a href="">Posts</a></li>
+          <li><a href="">Background</a></li>
+          <li><a href="">Recommendtations</a></li>
+          <li><a href="">Following</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="page-content">
+    <div class="container">
+      <div class="left-sidebar"></div>
+      <div class="main-content">
+        <section class="posts">
+          <h3 class="section-heading">Posts</h3>
+          <div class="section-content">
+            <div class="swiper-container posts-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide posts-item">
+                  <div class="posts-img one"></div>
+                  <h4>3 Myths That Confuse Top-Managers</h4>
+                  <span>February 19, 2016</span>
+                </div>
+                <div class="swiper-slide posts-item">
+                  <div class="posts-img two"></div>
+                  <h4>How much do we spend on hot drinks</h4>
+                  <span>February 19, 2016</span>
+                </div>
+                <div class="swiper-slide posts-item">
+                  <div class="posts-img three"></div>
+                  <h4>Good news you might have notices</h4>
+                  <span>February 19, 2016</span>
+                </div>
+                <div class="swiper-slide posts-item">
+                  <div class="posts-img one"></div>
+                  <h4>3 Myths That Confuse Top-Managers</h4>
+                  <span>February 19, 2016</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider-buttons">
+              <div class="button-prev"><span class="material-icons">
+                keyboard_arrow_left
+                </span></div>
+              <div class="button-next"><span class="material-icons">
+                keyboard_arrow_right
+                </span></div>
+              </div>
+            </div>
+        </section>
+        <section>
+          <h3 class="section-heading">Background</h3>
+        </section>
+        <section>
+          <h3 class="section-heading">Recommendations</h3>
+        </section>
+        <section>
+          <h3 class="section-heading">Following</h3>
+        </section>
+      </div>
+      <div class="right-sidebar"></div>
+    </div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js'></script>
+  </script>
+  <script  src="./script.js"></script>
+</body>
+</html>

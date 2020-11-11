@@ -1,0 +1,32 @@
+.slider-buttons {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $base-errows;
+    border-radius: 50%;
+    @include flex-centered;
+    cursor: pointer;
+
+    &.button-prev {
+      margin-right: 5px;
+    }
+
+    &.swiper-button-disabled {
+      border-color: $sub-text;
+      cursor: default;
+
+      span {
+        color: $sub-text;
+      }
+    }
+  }
+
+  span {
+    color: $base-errows;
+  }
+}
