@@ -30,3 +30,27 @@
     color: $base-errows;
   }
 }
+
+button {
+  cursor: pointer;
+  border: 1px solid $base-button;
+  background: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: $base-button;
+  outline: none;
+
+  &:hover {
+    background: $blue-line;
+  }
+
+  &.highlighted {
+    background: $base-button;
+    color: $white-bg;
+
+    &:hover {
+      color: $base-button;
+      background: $white-bg;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.following-tab {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.following-item {
+  p {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  span {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $link;
+    border-radius: 50%;
+    color: $link;
+    @include flex-centered;
+    margin-right: 5px;
+  }
+
+  a {
+    @include link-style-clear;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.logo-holder {
+  width: 130px;
+  height: 70px;
+  border: 1px solid $search-line;
+  margin-bottom: 20px;
+
+  &.microsoft {
+    background: url(../img/logo-microsoft.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.amazon {
+    background: url(../img/logo-amazon.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

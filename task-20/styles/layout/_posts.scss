@@ -3,6 +3,15 @@
     margin: 0 0 5px;
     font-size: 1rem;
     font-weight: 500;
+
+    a {
+      color: $regular-text;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   span {

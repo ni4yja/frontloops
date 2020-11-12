@@ -1,0 +1,129 @@
+.background-title {
+  font-size: 1.3rem;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+
+  span {
+    margin-right: 5px;
+  }
+}
+
+.background-tab {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.experience,
+.education {
+  .tab-row {
+    position: relative;
+  
+    &:before {
+      content: '';
+      display: block;
+      width: 9px;
+      height: 9px;
+      border: 1px solid $search-line;
+      background: $white-bg;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 1px;
+      z-index: 10;
+    }
+  
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 100%;
+      background: $search-line;
+      position: absolute;
+      left: 5px;
+      top: 11px;
+      z-index: 1;
+    }
+  
+    &:last-child {  
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.experience,
+.skills {
+  .tab-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.skills {
+  .tab-row {
+    padding-left: 0;
+  }
+  
+  p {
+    display: flex;
+    align-items: center;
+
+    span {
+      display: block;
+      width: 42px;
+      height: 42px;
+      border: 1px solid $regular-text;
+      border-radius: 50%;
+      margin-right: 20px;
+      @include flex-centered;
+    }
+  }
+
+  .img-holder {
+    display: flex;
+
+    img {
+      width: 40px;
+      margin-right: 15px;
+      border-radius: 50%;
+    }
+
+    span {
+      display: block;
+      width: 40px;
+      background: $gray-line;
+      border-radius: 50%;
+      @include flex-centered;
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.interests {
+  .tab-row {
+    padding-left: 0;
+  }
+
+  ul {
+    @include list-style-clear;
+    display: flex;
+  }
+
+  li {
+    margin-right: 10px;
+  }
+
+  a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: $regular-text;
+    background: $gray-line;
+    padding: 7px 10px;
+    border-radius: 3px;
+  }
+}

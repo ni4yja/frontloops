@@ -1,0 +1,74 @@
+.right-sidebar {
+  h4 {
+    font-size: 0.9rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+}
+
+.views-details {
+  display: flex;
+  margin-bottom: 25px;
+
+  img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: $sub-text;
+  }
+}
+
+.influencer-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    strong {
+      font-size: 1.2rem;
+    }
+
+    a {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: $sub-text;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.arrows {
+  span {
+    position: absolute;
+    top: 70px;
+
+    &.left {
+      left: 0;
+    }
+
+    &.right {
+      right: 0;
+    }
+  }
+}
