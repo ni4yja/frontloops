@@ -1,0 +1,268 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #4d26e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-tab {
+  width: 940px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab-image {
+  width: 440px;
+  background: #e26796;
+  position: relative;
+  margin: -40px 0;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tab-image h1 {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.tab-image .logo {
+  width: 40px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.tab-image .product {
+  position: absolute;
+  width: 120%;
+  left: -120px;
+  top: 125px;
+}
+
+.tab-image .icon {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5429f2;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+}
+
+.tab-image .icon:hover {
+  opacity: .8;
+}
+
+.tab-image .icon.one {
+  top: 220px;
+  left: 20px;
+}
+
+.tab-image .icon.two {
+  top: 365px;
+  left: 100px;
+}
+
+.tab-image .icon.three {
+  top: 425px;
+  left: 275px;
+}
+
+.tab-image .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  bottom: 40px;
+}
+
+.tab-image .pagination span {
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  opacity: .7;
+}
+
+.tab-image .pagination span.active, .tab-image .pagination span:hover {
+  opacity: 1;
+}
+
+.tab-info {
+  width: 500px;
+  padding: 60px 25px;
+  background: #fff;
+  border-radius: 0 7px 7px 0;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tab-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tab-info .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.tab-info .prices .new {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.tab-info .prices .old {
+  font-size: .9rem;
+  font-weight: 500;
+  color: #aaacb0;
+}
+
+.tab-info p {
+  font-weight: 300;
+  line-height: 1.4rem;
+  margin-bottom: 45px;
+}
+
+.tab-info .sizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.tab-info .sizes strong {
+  color: #aaacb0;
+  margin-right: auto;
+}
+
+.tab-info .sizes span {
+  font-size: 1.4rem;
+  color: #aaacb0;
+  margin: 0 15px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 60px;
+  padding: 3px 5px;
+  min-width: 35px;
+  text-align: center;
+}
+
+.tab-info .sizes span:hover {
+  border-color: #e26796;
+}
+
+.tab-info .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.tab-info .amount strong {
+  color: #aaacb0;
+  margin-right: 40px;
+}
+
+.tab-info .amount p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 15px;
+  position: relative;
+}
+
+.tab-info .amount p span {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 7px;
+  cursor: pointer;
+}
+
+.tab-info .amount p span:hover {
+  opacity: .6;
+}
+
+.tab-info .amount p .arrow-left {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #e26796;
+  left: -15px;
+}
+
+.tab-info .amount p .arrow-right {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #e26796;
+  right: -15px;
+}
+
+.tab-info button {
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 15px 100px;
+  background: #e74c3c;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 15px rgba(231, 76, 60, 0.7);
+          box-shadow: 0px 5px 15px rgba(231, 76, 60, 0.7);
+  outline: none;
+}
+
+.tab-info button:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
