@@ -1,0 +1,116 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #2980b9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.films-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 3.7rem;
+  margin-top: -195px;
+}
+
+.film-tab {
+  position: relative;
+  text-align: center;
+}
+
+.film-tab img {
+  width: 228px;
+  -webkit-box-shadow: 0 8px 11px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 11px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+}
+
+.film-tab .film-info {
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  right: -20px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  padding-top: 345px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 14px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 14px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: -webkit-transform .15s;
+  transition: -webkit-transform .15s;
+  transition: transform .15s;
+  transition: transform .15s, -webkit-transform .15s;
+}
+
+.film-tab .film-info h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.film-tab .film-info .details {
+  color: #777;
+  font-size: .85rem;
+  margin-top: .35rem;
+}
+
+.film-tab .film-info .new-price {
+  color: #2BCD77;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-top: 1.3rem;
+}
+
+.film-tab .film-info .old-price {
+  color: #999;
+  font-weight: 500;
+  font-size: .95rem;
+  margin-top: 1px;
+  text-decoration: line-through;
+}
+
+.film-tab .film-info button {
+  border: none;
+  outline: none;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: #292929;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 500;
+  margin-top: 1.3rem;
+  padding: 1.3rem 0;
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
+}
+
+.film-tab:hover .film-info {
+  -webkit-animation: bounce .4s backwards;
+          animation: bounce .4s backwards;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
