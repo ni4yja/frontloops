@@ -1,0 +1,170 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.charts-container {
+  background-color: #424D84;
+  padding: 1.2rem .9rem .9rem .9rem;
+  width: 443px;
+  min-width: 443px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-box-shadow: 6px 6px 12px rgba(77, 77, 77, 0.4);
+          box-shadow: 6px 6px 12px rgba(77, 77, 77, 0.4);
+}
+
+.columns-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 120px;
+}
+
+.columns-tab .value {
+  height: 100%;
+  margin: 0 .7rem;
+}
+
+.columns-tab .value.active .bar {
+  background-color: #3398DC;
+  opacity: 1;
+}
+
+.columns-tab .value:nth-child(1) .bar {
+  height: 80%;
+}
+
+.columns-tab .value:nth-child(2) .bar {
+  height: 100%;
+}
+
+.columns-tab .value:nth-child(3) .bar {
+  height: 50%;
+}
+
+.columns-tab .value:nth-child(4) .bar {
+  height: 35%;
+}
+
+.columns-tab .value:nth-child(5) .bar {
+  height: 60%;
+}
+
+.columns-tab .value:nth-child(6) .bar {
+  height: 75%;
+}
+
+.columns-tab .value:nth-child(7) .bar {
+  height: 30%;
+}
+
+.columns-tab .value:nth-child(8) .bar {
+  height: 100%;
+}
+
+.columns-tab .value:nth-child(9) .bar {
+  height: 70%;
+}
+
+.columns-tab .value:nth-child(10) .bar {
+  height: 80%;
+}
+
+.columns-tab .bar {
+  background-color: #fff;
+  opacity: .6;
+  width: 20px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+.columns-tab .month {
+  color: #fff;
+  opacity: .6;
+  margin-top: .5rem;
+}
+
+.circle-tab {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.circle-tab .donut-chart {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  margin-right: 1.9rem;
+}
+
+.circle-tab .donut-chart .total {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: .81rem;
+  line-height: 17px;
+  width: 80%;
+}
+
+.circle-tab .donut-info {
+  padding: .6rem 2rem .6rem 0;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.circle-tab .donut-info .gray {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.circle-tab .donut-info .light {
+  color: #fff;
+}
