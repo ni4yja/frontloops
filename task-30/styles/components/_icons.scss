@@ -1,0 +1,59 @@
+.material-icons {
+  color: $sub-text;
+}
+
+.plus-icon {
+  width: 30px;
+  height: 30px;
+  background: $white-bg;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulsing-icon {
+  cursor: pointer;
+
+  .circle {
+    border-radius: 50%;
+    border: 2px solid $white-bg;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    opacity: 0;
+    animation: pulsing 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+
+    &.two {
+      animation-delay: 1s;
+    }
+  }
+}
+
+@keyframes pulsing {
+  from {
+    transform: scale(.5, .5);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+.arrow-right,
+.arrow-left,
+.arrow-top  {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid $base-icon;
+  color: $regular-text;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+}

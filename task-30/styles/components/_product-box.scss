@@ -1,0 +1,222 @@
+.product-box {
+  display: grid;
+  grid-template-columns: 420px auto;
+  column-gap: 20px;
+  margin-bottom: 40px;
+
+  &-image {
+    position: relative;
+    width: 27.5rem;
+
+    img {
+      width: 25rem;
+      position: absolute;
+      left: 0;
+      z-index: 10;
+    }
+
+    .circle-large {
+      width: 27rem;
+      height: 5rem;
+      border: 1px dashed $sub-text;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      left: -.7rem;
+      top: 9rem;
+    }
+
+    .circle-small {
+      width: 15rem;
+      height: 1.8rem;
+      border: 1px dashed $sub-text;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      left: 5rem;
+      top: 10.4rem;
+    }
+
+    .size {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 7.3rem;
+      left: -3.9rem;
+      transform: rotate(-90deg);
+
+      .number {
+        font-size: .8rem;
+        font-weight: 900;
+        margin-bottom: .2rem;
+      }
+
+      .line {
+        width: 8.7rem;
+        border-bottom: 1px solid $sub-text;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: '';
+          width: 5px;
+          border-bottom: 1px solid $sub-text;
+          position: absolute;
+          transform: rotate(90deg);
+        }
+
+        &::before {
+          left: -3px;
+        }
+
+        &::after {
+          right: -3px;
+        }
+      }
+    }
+
+    .pulsing-icon {
+      position: absolute;
+      left: 18.7rem;
+      top: 7.7rem;
+      z-index: 10;
+    }
+  }
+
+  &-info {
+    display: grid;
+    grid-template-columns: 360px auto;
+    column-gap: 20px;
+
+    .product-title {
+      font-size: 2rem;
+      letter-spacing: -1px;
+      margin-bottom: 1.9rem;
+    }
+
+    .product-description {
+      letter-spacing: -.5px;
+      color: $sub-text;
+      margin-bottom: 2.5rem;
+
+      a {
+        letter-spacing: 0;
+        color: $sub-text;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .product-sizes {
+      display: flex;
+      width: fit-content;
+      border: 1px solid $base-border;
+      margin-bottom: 4.9rem;
+
+      &>div {
+        position: relative;
+        padding: .7rem 1.3rem;
+        border: 1px solid $base-border;
+
+        &:hover {
+          border-color: $base-button;
+        }
+      }
+
+      .height {
+        padding-left: 1.9rem;
+
+        .line {
+          height: 1rem;
+          border-left: 1px solid $sub-text;
+          left: 1.2rem;
+          top: .8rem;
+
+          &:before {
+            left: -3px;
+            top: 0;
+          }
+
+          &:after {
+            left: -3px;
+            bottom: 0;
+          }
+        }
+      }
+
+      .width {
+        padding-left: 2.6rem;
+
+        .line {
+          width: 1rem;
+          border-bottom: 1px solid $sub-text;
+          top: 1.3rem;
+          left: 1rem;
+
+          &:before {
+            left: -3px;
+            transform: rotate(90deg);
+          }
+
+          &::after {
+            right: -3px;
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      .angle {
+        padding-left: 1.9rem;
+
+        .line {
+          height: 1rem;
+          border-left: 1px solid $sub-text;
+          left: 1.2rem;
+          top: .8rem;
+          transform: rotate(-15deg);
+
+          &:before {
+            left: -3px;
+            top: 0;
+            transform: rotate(15deg);
+          }
+
+          &:after {
+            right: -2px;
+            bottom: 0;
+            transform: rotate(15deg);
+          }
+        }
+      }
+
+      .line {
+        position: absolute;
+
+        &::before,
+        &::after {
+          content: '';
+          width: 5px;
+          border-bottom: 1px solid $sub-text;
+          position: absolute;
+        }
+      }
+
+      span {
+        font-size: .8rem;
+        font-weight: 900;
+      }
+    }
+
+    .product-sale {
+      display: flex;
+
+      .product-price {
+        margin-right: 2.7rem;
+      }
+    }
+  }
+}

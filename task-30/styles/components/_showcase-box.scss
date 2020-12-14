@@ -1,0 +1,126 @@
+.showcase-box {
+  position: relative;
+
+  &-main {
+    height: 525px;
+    background: url(../img/showcase.jpg);
+    background-size: cover;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, .4);
+    }
+
+    .buy-all-products {
+      background: $white-bg;
+      padding: 2.5rem 2.5rem;
+      position: absolute;
+      top: 2rem;
+      left: 1.9rem;
+      z-index: 10;
+
+      .subtitle {
+        margin-bottom: 1.2rem;
+      }
+
+      .product-price {
+        margin-bottom: 1.8rem;
+      }
+    }
+
+    .pulsing-icon {
+      position: absolute;
+      z-index: 10;
+
+      .plus-icon {
+        color: rgba(0, 0, 0, .4);
+      }
+
+      &.one {
+        left: 5.9rem;
+        bottom: 8rem;
+      }
+
+      &.two {
+        right: 22.5rem;
+        bottom: 10.5rem;
+      }
+
+      &.three {
+        bottom: 12.8rem;
+        right: 9.7rem;
+      }
+    }
+  }
+
+  &-previews {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    left: 1.9rem;
+    bottom: -3.1rem;
+
+    .preview-item {
+      position: relative;
+      width: 150px;
+      height: 104px;
+      border-top: 4px solid $regular-text;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .4);
+      }
+
+      &:hover {
+        &::after {
+          background: rgba(0, 0, 0, .1);
+        }
+      }
+
+      &.one {
+        background: url(../img/preview1.jpeg);
+        background-size: cover;
+      }
+
+      &.two {
+        background: url(../img/preview2.jpeg);
+        background-size: cover;
+      }
+      
+      &.three {
+        background: url(../img/preview3.jpeg);
+        background-size: cover;
+      }
+
+      &.active {
+        height: 115px;
+        border-color: $gray-border;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -4px;
+          left: 0;
+          right: 70px;
+          height: 4px;
+          background: $base-button;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

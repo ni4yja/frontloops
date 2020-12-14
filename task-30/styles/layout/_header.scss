@@ -1,0 +1,77 @@
+header {
+  border-bottom: 1px solid $base-border;
+}
+
+.header-tab {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+
+  .logo {
+    margin-right: 6.5rem;
+
+    img {
+      width: 5rem;
+    }
+  }
+
+  .search-tab {
+    display: flex;
+    margin-right: 7.2rem; 
+
+    .search-icon {
+      font-size: 1.2rem;
+      color: $regular-text;
+      margin-right: 1.2rem;
+    }
+
+    .search-input {
+      border: none;
+      outline: none;
+      color: $regular-text;
+      font-weight: 700;
+
+      &::placeholder {
+        color: $sub-text;
+        font-size: 0.9rem;
+        font-weight: 700;
+      } 
+    }
+  }
+
+  .cart-tab {
+    display: flex;
+    align-items: center;
+
+    .total-price {
+      font-size: 0.9rem;
+      font-weight: 900;
+      margin-right: 0.7rem;
+    }
+
+    .cart {
+      position: relative;
+
+      span {
+        color: $regular-text;
+        font-size: 1.2rem;
+      }
+
+      &:after {
+        content: "2";
+        width: 16px;
+        height: 16px;
+        background: $base-button;
+        border-radius: 50%;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        font-size: 0.6rem;
+        font-weight: 700;
+        line-height: 16px;
+        vertical-align: middle;
+        text-align: center;
+      }
+    }
+  }
+}

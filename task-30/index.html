@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>milestone task #3</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-tab">
+        <div class="logo"><a href="#"><img src="img/logo.svg" alt="logo"></a></div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Inspirations</a></li>
+          </ul>
+        </nav>
+        <div class="search-tab">
+          <span class="material-icons search-icon">search</span>
+          <input type="text" class="search-input" placeholder="Search products...">
+        </div>
+        <div class="cart-tab">
+          <span class="total-price">$0</span>
+          <div class="cart"><span class="material-icons">shopping_cart</span></div>
+        </div> 
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="container">
+      <div class="main-content-tab">
+        <div class="product-tab">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Sofas & Armchairs</a></li>
+              <li class="active"><a href="#">Stockholm</a></li>
+            </ul>
+          </nav>
+          <div class="product-box">
+            <div class="product-box-image">
+              <img src="img/sofa.png" alt="sofa">
+              <div class="circle-large"></div>
+              <div class="circle-small"></div>
+              <div class="size">
+                <span class="number">74cm</span>
+                <div class="line"></div>
+              </div>
+              <div class="pulsing-icon">
+                <div class="plus-icon">+</div>
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+              </div>
+            </div>
+            <div class="product-box-info">
+              <div class="product-general-info">
+                <span class="subtitle">Stockholm (002.450.50)</span>
+                <h3 class="product-title">Three-Seat Sofa</h3>
+                <p class="product-description">Highly durable full-grain leather which is soft and has a natural look and feel. <a href="#">Vew more</a></p>
+                <div class="product-sizes">
+                  <div class="height">
+                    <div class="line"></div>
+                    <span>74cm</span>
+                  </div>
+                  <div class="width">
+                    <div class="line"></div>
+                    <span>195cm</span>
+                  </div>
+                  <div class="angle">
+                    <div class="line"></div>
+                    <span>86cm</span>
+                  </div>
+                </div>
+                <div class="product-sale">
+                  <h2 class="product-price">$1,400</h2>
+                  <button class="add-to-cart"><div class="plus-icon">+</div>add to cart</button>
+                </div>
+              </div>
+              <div class="product-additional-info">
+                <div class="icons-set">
+                  <div class="icons-set-column">
+                    <span class="material-icons">card_giftcard</span>
+                    <span class="material-icons">schedule</span>
+                    <span class="material-icons">security</span>
+                    <span class="material-icons">grid_on</span>
+                  </div>
+                  <h4 class="icons-set-title">Features</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-box">
+            <div class="showcase-box-main">
+              <div class="buy-all-products">
+                <span class="subtitle">Buy all products (4)</span>
+                <h2 class="product-price">$1,481</h2>
+                <button class="add-to-cart"><div class="plus-icon">+</div>add to cart</button>    
+              </div>
+              <div class="pulsing-icon one">
+                <div class="plus-icon">+</div>
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+              </div>
+              <div class="pulsing-icon two">
+                <div class="plus-icon">+</div>
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+              </div>
+              <div class="pulsing-icon three">
+                <div class="plus-icon">+</div>
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+              </div>
+            </div>
+            <div class="showcase-box-previews">
+              <div class="preview-item one active"></div>
+              <div class="preview-item two"></div>
+              <div class="preview-item three"></div>
+            </div>
+          </div>
+          <div class="features-box">
+            <div class="features-box-item">
+              <span class="material-icons features-icon">card_giftcard</span>
+              <h3 class="features-title">Bonus card as a gift</h3>
+              <span class="material-icons arrow-right">arrow_forward</span>
+            </div>
+            <div class="features-box-item">
+              <span class="material-icons features-icon">schedule</span>
+              <h3 class="features-title">24 hour support</h3>
+              <span class="material-icons arrow-right">arrow_forward</span>
+            </div>
+            <div class="features-box-item">
+              <span class="material-icons features-icon">security</span>
+              <h3 class="features-title">10 year guarantee</h3>
+              <span class="material-icons arrow-right">arrow_forward</span>
+            </div>
+            <div class="features-box-item">
+              <span class="material-icons features-icon">grid_on</span>
+              <h3 class="features-title">Newest technologies</h3>
+              <span class="material-icons arrow-right">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-content">
+            <div class="avatar">
+              <img src="img/avatar.svg" alt="avatar">
+            </div>
+            <h4 class="greeting">Hello, Anna!</h4>
+            <div class="proposals">
+              <span class="subtitle">My proposals</span>
+              <h5 class="proposals-item selected">
+                <span class="material-icons proposals-icon">event_seat</span>
+                Sofa Stockholm</h5>
+              <h5 class="proposals-item">
+                <span class="material-icons proposals-icon">weekend</span>
+                Sofa Reactive</h5>
+            </div>
+            <div class="choices">
+              <span class="subtitle">My choices</span>
+              <div class="choices-item">
+                <span class="material-icons choices-icon">event_seat</span>
+                <h6 class="choices-title">Armchairs</h6>
+                <span class="material-icons create">create</span>
+              </div>
+              <div class="choices-item">
+                <span class="material-icons choices-icon">weekend</span>
+                <h6 class="choices-title">Fairly big</h6>
+                <span class="material-icons create">create</span>
+              </div>
+            </div>
+            <button class="chat-button">
+              <span class="material-icons">chat_bubble</span>
+            </button>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shop-content">
+    <div class="container">
+      <div class="shop-content-tab">
+        <div class="info-box">
+          <h2 class="info-box-title">You Might Like</h2>
+          <span class="subtitle">1 of 5</span>
+          <span class="material-icons arrow-left">arrow_back</span>
+          <span class="material-icons arrow-right">arrow_forward</span>    
+        </div>
+        <div class="shop-box">
+          <div class="shop-box-item">
+            <img src="img/similar1.jpg" alt="bowl">
+            <h3 class="shop-box-title">Serving Bowl</h3>
+            <span class="subtitle">Stockholm 2017</span>
+            <span class="shop-box-price">$12</span>
+            <button class="add-to-cart"><div class="plus-icon">+</div>add to cart</button>
+          </div>
+          <div class="shop-box-item">
+            <img src="img/similar2.jpg" alt="bowl">
+            <h3 class="shop-box-title">Pendant Lamp</h3>
+            <span class="subtitle">Foto</span>
+            <span class="shop-box-price">$24</span>
+            <button class="add-to-cart"><div class="plus-icon">+</div>add to cart</button>
+          </div>
+          <div class="shop-box-item">
+            <img src="img/similar3.jpg" alt="bowl">
+            <h3 class="shop-box-title">Wall Clock</h3>
+            <span class="subtitle">Sippa</span>
+            <span class="shop-box-price">$12</span>
+            <button class="add-to-cart"><div class="plus-icon">+</div>add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-content">
+    <div class="container">
+      <div class="gallery-content-tab">
+        <div class="info-box">
+          <h2 class="info-box-title">From our clients</h2>
+          <span class="subtitle">#Stockholm</span><span class="subtitle">#Ikea</span>
+          <a href="#" class="info-box-link">View our instagram</a>
+        </div>
+        <div class="gallery-box">
+          <div class="gallery-box-item one">
+            <p class="gallery-box-info">
+              <img src="img/user.jpg" alt="user">
+              John Maybe
+            </p>
+          </div>
+          <div class="gallery-box-item two">
+            <p class="gallery-box-info">
+              <img src="img/user.jpg" alt="user">
+              John Maybe
+            </p>
+          </div>
+          <div class="gallery-box-item three">
+            <button class="gallery-box-button">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer-tab">
+        <div class="logo"><a href="#"><img src="img/logo.svg" alt="logo"></a></div>
+        <div class="footer-content">
+          <p class="copyright">© Inter IKEA Systems B.V. 1999-2017</p>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Catalogues</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Planning tools</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </nav>
+          <span class="material-icons arrow-top">arrow_upward</span>
+        </div>
+        <div class="icons-set">
+          <div class="icons-set-column">
+            <span class="material-icons">local_phone</span>
+            <span class="material-icons">email</span>
+            <span class="material-icons">chat_bubble</span>
+            <span class="material-icons">location_on</span>
+          </div>
+          <h4 class="icons-set-title">Contact us</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
